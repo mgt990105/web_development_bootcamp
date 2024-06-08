@@ -1,0 +1,25 @@
+body {
+  text-align: center;
+  background-color: rgb(233, 215, 207);
+  margin: 50px;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  color: rgb(51, 48, 48);
+  /* rgb is one of the ways you can bring in colors */
+}
+
+p {
+  font-family: "Fira Sans", sans-serif;
+  color: rgb(87, 21, 21);
+}
+
+a {
+  color: rgb(218, 89, 39);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

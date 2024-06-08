@@ -1,0 +1,62 @@
+h1 {
+  font-family: "Oswald", sans-serif;
+  color: rgb(51, 48, 48);
+  font-size: 48px;
+  margin: 0;
+  /* rgb is one of the ways you can bring in colors */
+}
+
+/* #description {
+  margin-top: 24px;
+} */
+
+/* Same as the above code  */
+header p {
+  margin: 36px;
+}
+
+h2 {
+  color: rgb(78, 13, 5);
+  font-family: "Oswald", "Sand-serif";
+}
+
+main p {
+  margin: 12px;
+  color: rgb(71, 29, 22);
+}
+
+.highlight-goal {
+  background-color: rgb(228, 85, 85);
+}
+
+ul {
+  list-style: none;
+  width: 500px;
+  margin: 36px auto;
+}
+
+li {
+  margin: 32px;
+  background-color: rgb(223, 136, 124);
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#go-back-text {
+  font-family: "Fira Sans", sans-serif;
+  color: rgb(105, 95, 95);
+  margin-top: 36px;
+}
+
+a {
+  padding: 6px;
+  background-color: rgb(219, 96, 96);
+  color: white;
+  border-radius: 6px;
+}
+
+a:hover {
+  background-color: rgb(180, 12, 90);
+  text-decoration: none;
+}

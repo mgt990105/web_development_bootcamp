@@ -1,0 +1,95 @@
+body {
+  background-color: rgb(244, 234, 255);
+}
+
+h1 {
+  font-family: "roboto" sans-serif;
+  font-size: 44px;
+  text-align: center;
+  color: rgb(88, 49, 196);
+}
+
+header img {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+main {
+  background-color: rgb(106, 51, 216);
+  display: block;
+  margin: 32px auto;
+  margin-top: 40px;
+  border-radius: 5px;
+  padding: 32px;
+  width: 75%;
+}
+
+h2 {
+  font-family: sans-serif;
+  color: rgb(243, 226, 226);
+  font-size: 24px;
+}
+
+p {
+  font-family: sans-serif;
+  color: rgb(243, 226, 226);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 14px 0;
+  padding-left: 12px;
+  border-left: 5px solid transparent;
+}
+
+.highlighted-point {
+  color: rgb(255, 237, 177);
+  border-color: rgb(247, 209, 85);
+}
+
+.highlighted-point p {
+  color: rgb(236, 238, 97);
+}
+
+p a {
+  background-color: rgb(211, 210, 146);
+  border-radius: 5px;
+  padding: 3px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  background-color: rgb(250, 219, 82);
+}
+
+footer {
+  background-color: rgb(245, 226, 58);
+  width: 250px;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
+footer a {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+  display: block;
+  margin: 20px auto;
+  text-decoration: none;
+}
+
+footer :hover {
+  color: blue;
+}
