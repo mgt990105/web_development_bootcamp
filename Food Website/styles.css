@@ -1,0 +1,179 @@
+header {
+  background-color: rgb(41, 31, 9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  width: 100%;
+  height: 5rem;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(58, 55, 55);
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul {
+  display: flex;
+}
+
+header li a {
+  font-size: 1.25rem;
+  font-family: sans-serif;
+  color: rgb(223, 158, 37);
+  margin-left: 25px;
+  text-decoration: none;
+}
+
+header li a:hover {
+  color: rgb(41, 31, 9);
+  background-color: rgb(223, 158, 37);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.menu-btn {
+  display: none;
+}
+
+#page-logo a {
+  font-size: 1.5rem;
+  color: rgb(223, 158, 37);
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+#side-drawer {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(29, 26, 27);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 1;
+}
+
+#side-drawer:target {
+  display: block;
+}
+
+#side-drawer header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 5%;
+  width: 100%;
+  height: 5rem;
+}
+
+#side-drawer ul {
+  list-style: none;
+  margin: 0;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#side-drawer ul li {
+  margin: 1rem 0;
+}
+
+#side-drawer ul li a {
+  color: rgb(253, 239, 213);
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+#headline {
+  font-size: 2rem;
+  color: rgb(199, 132, 8);
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#highlight-food ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 50px;
+}
+
+#highlight-food ul li {
+  background-color: rgb(207, 187, 142);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 23rem;
+  width: 24rem;
+}
+
+#highlight-food-item img {
+  height: 15rem;
+  width: 24rem;
+  object-fit: cover;
+  padding: 0;
+  margin: 0;
+}
+
+#highlight-food ul li h2 {
+  color: rgb(53, 53, 53);
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.add-to-cart {
+  text-align: center;
+}
+
+.add-to-cart a {
+  font-family: sans-serif;
+  background-color: rgb(221, 149, 14);
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+}
+
+/* Media Queries */
+
+@media (max-width: 48rem) {
+  #highlight-food ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  #headline {
+    font-size: 1.5rem;
+  }
+
+  header li {
+    display: none;
+  }
+
+  .menu-btn span {
+    flex-direction: column;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+  }
+}
