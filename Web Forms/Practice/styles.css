@@ -1,0 +1,101 @@
+body {
+  background-color: rgb(238, 248, 248);
+  font-family: "Roboto", sans-serif;
+  margin: 3rem 8rem;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  width: 40rem;
+  margin: 2rem auto;
+  background-color: rgb(229, 234, 235);
+  padding: 1rem;
+  border-radius: 6px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  margin-bottom: 0.5rem;
+  display: block;
+  color: black;
+  font-weight: 0;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  font: inherit;
+  border: 1px solid rgb(184, 184, 184);
+  padding: 0.25rem;
+  color: rgb(61, 58, 58);
+  box-sizing: border-box;
+}
+
+#message {
+  height: 8rem;
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgb(201, 214, 255);
+  color: rgb((32, 5, 63));
+  border-color: rgb(32, 5, 63);
+}
+
+.form-control-inline {
+  display: flex;
+}
+
+#terms {
+  margin-top: 7px;
+}
+.form-control-inline input {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.submit-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+button {
+  display: block;
+  font-family: sans-serif;
+  border: 1px solid rgb(32, 5, 63);
+  padding: 0.25rem 0.75rem;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 80px;
+}
+
+.clear-button {
+  background-color: white;
+  color: rgb(42, 44, 71);
+}
+
+.submit-button {
+  background-color: rgb(23, 58, 90);
+  color: rgb(255, 255, 255);
+}
+
+.clear-button:hover {
+  background-color: rgb(230, 235, 240);
+}

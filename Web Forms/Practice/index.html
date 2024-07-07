@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="" method="GET">
+        <h2>How can we help you?</h2>
+        <section>
+          <ul>
+            <li>
+              <label for="name">Your Name</label>
+              <input type="text" name="user-name" id="name" required />
+            </li>
+            <li>
+              <label for="email">Your E-Mail Address</label>
+              <input type="email" name="user-email" id="email" required />
+            </li>
+            <li>
+              <label for="phone">Your Phone Number</label>
+              <input
+                type="tel"
+                name="user-phone"
+                id="phone"
+                required
+                minlength="5"
+              />
+            </li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <li>
+              <label for="message">Your Message</label>
+              <textarea
+                type="text"
+                name="user-message"
+                id="message"
+                required
+                minlength="5"
+                maxlength="200"
+                rows="5"
+              ></textarea>
+            </li>
+            <li>
+              <label for="method">How did you find about us?</label>
+              <select name="user-method" id="method" required>
+                <option value="web-search">Web Search</option>
+                <option value="word-of-mouth">Word of Mouth</option>
+                <option value="social-media">Social Media</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>How should we reply?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="contact"
+                id="contact-method"
+                value="call"
+                required
+              />
+              <label for="contact-method">Call me</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="contact"
+                id="email-method"
+                value="email"
+                required
+              />
+              <label for="email-method">Send me an email</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="contact"
+                id="no-method"
+                value="noreply"
+                required
+              />
+              <label for="no-method">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <div class="form-control-inline" id="terms">
+            <input type="checkbox" id="agree-terms" name="terms" required />
+            <label for="agree-terms">Accept Terms</label>
+          </div>
+        </section>
+        <section>
+          <div class="submit-buttons">
+            <button type="reset" class="clear-button">Clear</button>
+            <button type="submit" class="submit-button">Submit</button>
+          </div>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
