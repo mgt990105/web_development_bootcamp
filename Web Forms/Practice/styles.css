@@ -78,11 +78,12 @@ textarea:focus {
 button {
   display: block;
   font-family: sans-serif;
-  border: 1px solid rgb(32, 5, 63);
+  border: 1px solid rgba(39, 42, 241, 0.678);
   padding: 0.25rem 0.75rem;
   font-size: 14px;
   border-radius: 4px;
   cursor: pointer;
+  height: 30px;
   width: 80px;
 }
 
@@ -98,4 +99,8 @@ button {
 
 .clear-button:hover {
   background-color: rgb(230, 235, 240);
+}
+
+.submit-button:hover {
+  background-color: rgb(60, 88, 179);
 }
