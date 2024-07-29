@@ -25,8 +25,10 @@ let person = {
   name: "Mandula", // property
   greet() {
     // method
-    console.log("Hello!");
+    console.log("Hello! This is the output of the method");
   },
 };
 
 person.greet();
+
+console.log(person.name);
