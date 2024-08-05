@@ -30,6 +30,19 @@ function updateRemainingChars(event) {
 
   //   change the text content of that HTML element to the remaining characters
   remainingCharsElement.textContent = remainingChars;
+
+  if (remainingChars === 0) {
+    productNameInput.classList.add("error");
+    remainingCharsElement.classList.add("error");
+  } else if (remainingChars <= 10) {
+    productNameInput.classList.add("warning");
+    remainingCharsElement.classList.add("warning");
+    productNameInput.classList.remove("error");
+    remainingCharsElement.classList.remove("error");
+  } else {
+    productNameInput.classList.remove("warning");
+    remainingCharsElement.classList.remove("warning");
+  }
 }
 
 productNameInput.addEventListener("input", updateRemainingChars);
