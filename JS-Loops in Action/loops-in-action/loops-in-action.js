@@ -29,7 +29,7 @@ function calculateTheSum() {
 
 calculateSumButtonElement.addEventListener("click", calculateTheSum);
 
-// Second Example: Highlight Links
+// --------- Second Example: Highlight Links
 
 // const firstLink = document.getElementById("link-1");
 // const secondLink = document.getElementById("link-2");
@@ -53,7 +53,7 @@ function linkHighlighter() {
 
 highlightButton.addEventListener("click", linkHighlighter);
 
-//  Third Example: Display User Info
+//  --------- Third Example: Display User Info
 
 const displayButton = document.querySelector("#user-data button");
 
@@ -80,45 +80,88 @@ function displayUserData() {
 
 displayButton.addEventListener("click", displayUserData);
 
-//  Fourth Example: Roll the Dice
+// --------- Fourth Example: Roll the Dice
 
-const rollDiceButton = document.querySelector("#statistics button");
+// const rollDiceButton = document.querySelector("#statistics button");
 
-function rollDice() {
-  return Math.floor(Math.random() * 6) + 1;
+// function rollDice() {
+//   return Math.floor(Math.random() * 6) + 1;
+// }
+
+// function deriveNumberofDiceRolls() {
+//   const targetNumberElement = document.getElementById("user-target-number");
+//   const diceRollsListElement = document.getElementById("dice-rolls");
+
+//   const enteredNumber = targetNumberElement.value;
+//   diceRollsListElement.innerHTML = "";
+
+//   let hasRolledTargetNumber = false;
+//   let numberOfRolls = 0;
+
+//   while (!hasRolledTargetNumber) {
+//     const rolledNumber = rollDice();
+//     // if (rolledNumber == enteredNumber)
+//     //     hasRolledTargetNumber = true
+//     // }
+
+//     numberOfRolls++; // numberOfRolls = numberOfRolls + 1
+//     const newRollListElement = document.createElement("li");
+//     const outputText = "Roll " + numberOfRolls + ": " + rolledNumber;
+//     newRollListElement.textContent = outputText;
+//     diceRollsListElement.append(newRollListElement);
+//     hasRolledTargetNumber = (rolledNumber == enteredNumber);
+//   }
+
+//   const outputTotalRollsElement = document.getElementById("output-total-rolls");
+//   const outputTargetNumberElement = document.getElementById(
+//     "output-target-number"
+//   );
+
+//   outputTargetNumberElement.textContent = enteredNumber;
+//   outputTotalRollsElement.textContent = numberOfRolls;
+// }
+
+// rollDiceButton.addEventListener("click", deriveNumberofDiceRolls);
+
+// --------- Fourth Example: Roll the Dice (by myself)
+
+// locating the elment button
+const rollTheDiceButton = document.querySelector("#statistics button");
+
+// creating the functino that spits out numbers between 1-6
+
+function rollDiceOutput() {
+  const rolledNumber = Math.floor(Math.random() * 6) + 1;
+  return rolledNumber;
 }
 
-function deriveNumberofDiceRolls() {
-  const targetNumberElement = document.getElementById("user-target-number");
-  const diceRollsListElement = document.getElementById("dice-rolls");
+function numberOfDiceRolls() {
+  const inputNumber = document.getElementById("user-target-number").value;
+  const outputList = document.getElementById("dice-rolls");
 
-  const enteredNumber = targetNumberElement.value;
-  diceRollsListElement.innerHTML = "";
+  let rollCount = 0;
+  let numberMatch = false;
 
-  let hasRolledTargetNumber = false;
-  let numberOfRolls = 0;
+  outputList.innerHTML = "";
 
-  while (!hasRolledTargetNumber) {
-    const rolledNumber = rollDice();
-    // if (rolledNumber == enteredNumber)
-    //     hasRolledTargetNumber = true
-    // }
+  while (!numberMatch) {
+    rollCount = rollCount + 1;
+    const rolledValue = rollDiceOutput();
+    const newListItem = document.createElement("li");
+    const outputText = "Roll " + rollCount + " output:" + rolledValue;
+    newListItem.textContent = outputText;
 
-    numberOfRolls++;
-    const newRollListElement = document.createElement("li");
-    const outputText = "Roll " + numberOfRolls + ": " + rolledNumber;
-    newRollListElement.textContent = outputText;
-    diceRollsListElement.append(newRollListElement);
-    hasRolledTargetNumber = rolledNumber == enteredNumber;
+    outputList.append(newListItem);
+
+    numberMatch = rolledValue == inputNumber;
   }
 
-  const outputTotalRollsElement = document.getElementById("output-total-rolls");
-  const outputTargetNumberElement = document.getElementById(
-    "output-target-number"
-  );
+  attemptsCount = document.getElementById("output-total-rolls");
+  targetNumber = document.getElementById("output-target-number");
 
-  outputTargetNumberElement.textContent = enteredNumber;
-  outputTotalRollsElement.textContent = numberOfRolls;
+  attemptsCount.textContent = rollCount;
+  targetNumber.textContent = inputNumber;
 }
 
-rollDiceButton.addEventListener("click", deriveNumberofDiceRolls);
+// adding the event listener
+rollTheDiceButton.addEventListener("click", numberOfDiceRolls);

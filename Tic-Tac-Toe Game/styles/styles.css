@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: "Open-Sans", sans-serif;
+  color: rgb(46, 44, 44);
+  background-color: rgb(248, 245, 248);
+}
+
+#main-header {
+  background-color: rgb(143, 47, 199);
+  color: white;
+  padding: 2rem 5%;
+  text-align: center;
+}
+
+.btn {
+  font: inherit;
+  /* inherit the font syle of the parent */
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(143, 47, 199);
+  border: 1px solid rgb(143, 47, 199);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-alt {
+  font: inherit;
+  /* inherit the font syle of the parent */
+  padding: 0.5rem 1.5rem;
+  background-color: transparent;
+  border: transparent;
+  color: rgb(143, 47, 199);
+}
+
+.btn:hover {
+  background-color: rgb(79, 8, 121);
+  border-color: rgb(79, 8, 121);
+}
+
+.btn-alt:hover {
+  background-color: rgb(208, 167, 231);
+  border-color: transparent;
+}
