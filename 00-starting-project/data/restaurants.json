@@ -1,0 +1,23 @@
+[
+  {
+    "name": "New Red Bowl",
+    "address": "Athens",
+    "cuisine": "Asian",
+    "website": "htttps://newredbowl.com",
+    "description": "Food is very good! "
+  },
+  {
+    "name": "Cali n Tito's",
+    "address": "Athens",
+    "cuisine": "Mexican",
+    "website": "https://calintitos.com",
+    "description": "Great food!"
+  },
+  {
+    "name": "Thai Spoon",
+    "address": "Downtown Athens",
+    "cuisine": "Chineese",
+    "website": "https://thaispoon.com",
+    "description": "Love that food! "
+  }
+]

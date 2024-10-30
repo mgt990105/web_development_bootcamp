@@ -148,7 +148,7 @@ header li a:hover {
 
 /* Media Queries */
 
-@media (max-width: 48rem) {
+@media (max-width: 480px) {
   #highlight-food ul {
     flex-direction: column;
     align-items: center;
