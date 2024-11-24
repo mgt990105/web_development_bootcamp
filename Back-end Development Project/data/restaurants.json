@@ -1,0 +1,34 @@
+[
+  {
+    "id": "r1",
+    "name": "New Red Bowl",
+    "address": "Athens",
+    "cuisine": "Asian",
+    "website": "htttps://newredbowl.com",
+    "description": "Food is very good! "
+  },
+  {
+    "id": "r2",
+    "name": "Cali n Tito's",
+    "address": "Athens",
+    "cuisine": "Mexican",
+    "website": "https://calintitos.com",
+    "description": "Great food!"
+  },
+  {
+    "id": "r3",
+    "name": "Thai Spoon",
+    "address": "Downtown Athens",
+    "cuisine": "Chineese",
+    "website": "https://thaispoon.com",
+    "description": "Love that food! "
+  },
+  {
+    "name": "Jinya Ramen",
+    "address": "Athens Downtown",
+    "cuisine": "Asian",
+    "website": "htttps://jinyaramen.com",
+    "description": "Absolutely!",
+    "id": "af2b0b6e-be62-4273-aa49-cc732f722c7e"
+  }
+]
